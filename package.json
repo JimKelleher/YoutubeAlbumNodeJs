@@ -1,0 +1,19 @@
+{
+  "name": "youtubealbum",
+  "version": "1.0.0",
+  "description": "Queries YouTube for musical artist full albums using a JSON discography of Wikipedia data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/youtubealbum.git"
+  },
+  "author": "James Kelleher",
+  "license": "ISC"
+}
