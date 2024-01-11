@@ -136,7 +136,9 @@ function write_output(artists_albums_string) {
 
         //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         // Head:
-        "<!DOCTYPE html><html><head><title>YouTube Album Finder</title>" +
+        "<!DOCTYPE html><html><head>" +
+        "<meta id='viewport' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'>" +            
+        "<title>YouTube Album Finder</title>" +
         "<script>" +
         nodeJsFileServices.readFileSync("WorkingWebBrowserServices.js", "utf8") +
         "</script>" +
@@ -151,7 +153,7 @@ function write_output(artists_albums_string) {
         '<div class="BannerDiv"><br><table><tbody><tr>' +
         '<td class="BannerTD"><img src="youtube.png" alt="YouTube Logo"></td>' +
         '<td class="BannerTD BannerText">Album Finder</td></tr></tbody></table></div><br>' +
-        '<button class="button" onClick="open_popup_window(\'http://www.workingweb.info/YoutubeAlbumNodeJsAbout\', true, \'no\', \'no\', 505, 640);">About</button><br><br>' +
+        '<button class="button" onClick="open_popup_window(\'https://www.workingweb.info/YoutubeAlbumNodeJsAbout\', true, \'no\', \'no\', 505, 640);">About</button><br><br>' +
         '<div class="newspaper">' + artists_albums_string + '</div>' +
         "</body></html>";
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
